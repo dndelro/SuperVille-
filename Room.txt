@@ -1,0 +1,188 @@
+CREATE TABLE Room(
+    roomNumber INTEGER Primary Key not Null, 
+    roomDescription text not null, 
+    secondDescription text not null,
+    north INTEGER not null,
+    east INTEGER not null,
+	monsterName TEXT,
+    south INTEGER not null,
+    west INTEGER not null,
+    northKeyID INTEGER,
+    eastKeyID INTEGER,
+    southKeyID INTEGER,
+    westKeyID INTEGER
+);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID)
+Values(1,'To your north you see a YELLOW door and to your WEST you see a RED door', 'Your second description', 5, 2, 0, 3, 3, 0, 0, 1);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID)
+Values(2,'You spot something RED on the ground and a GREEN door in front of you', 'Your second description', 0, 4, 0, 1, NULL, 2, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(3,'You see something GREEN on the ground', 'Your second description', 0, 1, 0, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(4,'You see something YELLOW on the ground', 'Your second description', 0, 0, 0, 2, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(5,'Theres nothing of note here...', 'Your second description', 0, 8, 1, 6, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(6,'You spot something BLUE on the ground', 'Your second description', 0, 5, 0, 7, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(7,'Theres a chest in this room you could try to LOOK at it', 'Your second description', 0, 6, 0, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(8,'Theres a chest in this room, you could try to LOOK at it', 'Your second description', 0, 9, 0, 5, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(9,'There isnt much here...', 'Your second description', 10, 0, 0, 8, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(10,'To your WEST you see a skull with a single red eyeball in its socket, and NORTH you see a BLUE door', 'Your second description', 13, 0, 9, 11, 4, NULL, NULL, 10);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(11,'Not much to find here...', 'Your second description', 0, 10, 0, 12, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(12,'Nothing in here', 'Your second description', 0, 11, 0, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(13,'Slim pickings here...', 'Your second description', 0, 0, 10, 14, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(14,'Theres a door with an orange lock on it', 'Your second description', 15, 13, 0, 17, NULL, NULL, NULL, 5);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(15,'Not much to see here', 'Your second description', 0, 16, 14, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(16,'You see something ORANGE on the ground', 'Your second description', 0, 0, 0, 15, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID)
+Values(17,'Theres an old boot here', 'Your second description', 18, 14, 0, 20, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID)
+Values(18,'Nothing.', 'Your second description', 19, 0, 17, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID)
+Values(19,'This room is brighter than the others and theres an armor stand here its hard to LOOK at', 'Your second description', 0, 0, 18, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(20,'You see nothing', 'Your second description', 21, 17, 0, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(21,'Theres a pedestal here to your WEST it looks like its missing a sword', 'Your second description', 22, 0, 20, 28, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(22,'To your north theres a red-WINE colored door.', 'Your second description', 24, 0, 21, 23, 6, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(23,'Theres something on the ground', 'Your second description', 0, 22, 0, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(24,'Theres a humongous lock on the door to your north', 'Your second description', 29, 25, 22, 26, 7, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(25,'A large hefty key is on the ground', 'Your second description', 0, 0, 0, 24, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(26,'A large golden-colored key is here', 'Your second description', 0, 24, 0, 27, NULL, NULL, NULL, 12);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(27,'Theres a statue in here and it looks like its holding something, LOOK at it closely', 'Your second description', 0, 26, 0, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(28, 'You dont need to LOOK at this to know youve found something legendary', 'Your second description', 0, 21, 0, 0, NULL, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID) 
+Values(29,'You find nothing but your will to fight and finish your journey', 'Your second description', 30, 0, 0, 0, 8, NULL, NULL, NULL);
+
+INSERT INTO Room(roomNumber, roomDescription, secondDescription, north, east, south, west, northKeyID, eastKeyID, southKeyID, westKeyID)
+Values(30,'Youve made it to the end.', 'Your second description', 0, 0, 0, 0, NULL, NULL, NULL, NULL);
+
+--ITEM LOCATIONS
+
+CREATE TABLE Item (
+    ItemNumber INTEGER PRIMARY KEY,
+    Name TEXT,
+    Description TEXT,
+    Location INTEGER
+);
+
+
+--KEYS 
+
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (1, 'Red Key', 'A key with the number 1', 2);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (2, 'Green Key', 'A key with the number 2', 3);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (3, 'Yellow Key', 'A key with the number 3', 4);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (4, 'Blue Key', 'A key with the number 4', 6);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (5, 'Orange Key', 'A key with the number 5', 16);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (6, 'Wine Key', 'A key with the number 6', 22);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (7, 'Boss Key 1', 'A key with the number 7', 25);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (8, 'Boss Key 2', 'A key with the number 8', 26);
+
+--KEY ITEMS
+
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (10, 'Glass Eye', 'A pink glass eye that looks like it belongs inside of something', 7);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (11, 'Marble Blade', 'A teal replica statue of a sword that you cant equip but it looks like it belongs inside of something', 17);
+
+--PUZZLE ANSWERS 
+
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (20, ' ', ' ', 0);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (21, 'Blue', ' ',0);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (22, ' ', ' ', 0);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (23, ' ',' ', 0);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (24, ' ', ' ', 0);
+
+--WEAPONS
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (30, 'Wooden Pole', 'A trusty wooden pole good for whacking', 0);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (31, 'Lite Sword', 'A light yet sharp steel sword good for slicing', 12);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (32, 'Super Sword', 'A legendary blade good for dispelling evil', 28);
+
+--ARMOR
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (40, 'Cloth Robes', 'A traditional tan garment that provides little defense', 0);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (41, 'Hero Armor', 'A light yet sturdy set of brown clothes', 8);
+INSERT INTO Item (ItemNumber, Name, Description, Location) VALUES (42, 'Magic Armor', 'A white magical set of armor that boasts great defense and feels lighter than air', 19);
+
+
+--PLAYER INVENTORY
+
+CREATE TABLE Inventory (
+	itemNumber INTEGER PRIMARY KEY,
+    Name TEXT,
+    description TEXT,
+    hasItem INTEGER
+);
+
+--KEYS
+
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (1, 'A key with the number 1', 'A red key', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (2, 'A key with the number 2', 'A green key', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (3, 'A key with the number 3', 'A yellow key', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (4, 'A key with the number 4', 'A blue key', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (5, 'A key with the number 5', 'A orange key', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (6, 'A key with the number 6', 'A red wine-colored key', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (7, 'A key with the text B1', 'The 1st key you need to access the boss room', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (8, 'A key with the number B2', 'The 2nd key you need to access the boss room', 0);
+--KEY ITEMS
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (10, 'Glass Eye', 'A pink glass eye that looks like it belongs inside of something', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (11, 'Marble Blade', 'A teal replica statue of a sword that you cant equip but it looks like it belongs inside of something', 0);
+--PUZZLE ANSWERS
+
+--WEAPONS 
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (30, 'Wooden Pole', 'A trusty wooden pole good for whacking', 1);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (31, 'Lite Sword', 'A light yet sharp steel sword good for slicing', 0);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (32, 'Super Sword', 'A legendary blade good for dispelling evil', 0);
+
+--ARMOR
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (40, 'Cloth Robes', 'A traditional tan garment that provides little defense', 1);
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (41, 'Hero Armor', 'A light yet sturdy set of brown clothes', 0); 
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (42, 'Magic Armor', 'A white magical set of armor that boasts great defense and feels lighter than air', 0); 
+
+--HEALTH
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (
+INSERT INTO Inventory (ItemNumber, Name, Description, hasItem) VALUES (
